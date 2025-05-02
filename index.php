@@ -15,7 +15,7 @@ require 'models/articles-data.php';
 <section class="bg-white mt-12 rounded-xl dark:bg-gray-900">
     <div class="py-8 px-12  mx-auto max-w-screen">
         <!-- Contenu du main -->
-        <p>
+        <p class="mb-6 text-4xl font-extrabold dark:text-white">
             <?php
 
             echo "Super $article pour dame "
@@ -41,7 +41,7 @@ require 'models/articles-data.php';
 
         <div>
 
-            <h3 class="mb-6 text-4xl font-extrabold dark:text-white">Les prix de tous les articles </h3>
+            <h3 class="my-6 text-4xl font-extrabold dark:text-white">Les prix de tous les articles </h3>
 
             <ul class="max-w-md divide-y divide-gray-200 dark:divide-gray-700">
                 <?php foreach ($articles_prix as $name => $prix): ?>
@@ -67,22 +67,6 @@ require 'models/articles-data.php';
                 <?php endforeach; ?>
             </ul>
 
-            <ul>
-                <!-- affichage de prix des articles  -->
-
-                <li><?php echo $prix . 'FC'; ?></li>
-            </ul>
-        </div>
-
-        <div>
-
-            <h3 class="text-4xl font-extrabold dark:text-white">Le nom et prix des articles </h3>
-            <ul>
-                <!-- affichage de nom des article  -->
-                <?php foreach ($articles_prix as $name => $prix): ?>
-                    <li><?php echo $name . ' : ' . $prix . 'FC'; ?></li>
-                <?php endforeach; ?>
-            </ul>
         </div>
 
         <div>
@@ -122,9 +106,11 @@ require 'models/articles-data.php';
                 <?php endforeach; ?>
             </ul>
 
-            <h3 class="text-4xl font-extrabold dark:text-white">Le prix total de tous les articles</h3>
+            <h3 class="my-6 text-4xl font-extrabold dark:text-white">Le prix total de tous les articles</h3>
             <!-- appel du trainte d'affichage de la somme des articles  -->
-            <?php echo "Le total des articles est: ", $total, "FC" ?>
+            <p class="text-sm font-medium text-gray-900 truncate dark:text-white">
+                <?php echo "Le total des articles est: ", $total, "FC" ?>
+            </p>
         </div>
         <div>
             <h3>L'indentité du premier etudiant</h3>
