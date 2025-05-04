@@ -2,10 +2,10 @@
 
 $etudiants = [
     [
-    "id" => 1,
-    "nom" => "David",
-    "promotion" => "L3 GL",
-    "tel" => "0883456789",
+        "id" => 1,
+        "nom" => "David",
+        "promotion" => "L3 GL",
+        "tel" => "0883456789",
 
     ],
     [
@@ -40,109 +40,124 @@ $etudiants = [
 
 $produits = [
     [
-        "id"=> 1,
+        "id" => 1,
         "etudiant_id" => 2,
-        "nom"=> "bracelet",
-        "prix"=> 3000,
-        "devise"=> "Fc",
+        "nom" => "Smart Watch",
+        "prix" => 20,
+        "devise" => "$",
+        "image" => "./assets/images/smart-watch.jpg"
     ],
 
     [
-        "id"=> 2,
+        "id" => 2,
         "etudiant_id" => 1,
-        "nom"=> "Iphone 16",
-        "prix"=> 150,
-        "devise"=> "$",
+        "nom" => "Iphone 16e",
+        "prix" => 500,
+        "devise" => "$",
+        "image" => "./assets/images/iphone.png"
     ],
     [
-        "id"=> 3,
+        "id" => 3,
         "etudiant_id" => 4,
-        "nom"=> "Samsung",
-        "prix"=> 200,
-        "devise"=> "$",
+        "nom" => "Ecouteur sans fil",
+        "prix" => 15,
+        "devise" => "$",
+        "image" => "./assets/images/headphones.jpg"
     ],
     [
-        "id"=> 4,
+        "id" => 4,
         "etudiant_id" => 5,
-        "nom"=> "Montre",
-        "prix"=> 50,
-        "devise"=> "$",
+        "nom" => "Sac pour PC",
+        "prix" => 20,
+        "devise" => "$",
+        "image" => "./assets/images/bag.png"
     ],
     [
-        "id"=> 5,
+        "id" => 5,
         "etudiant_id" => 2,
-        "nom"=> "Glass",
-        "prix"=> 5000,
-        "devise"=> "FC",
+        "nom" => "Souris sans fil",
+        "prix" => 6000,
+        "devise" => "FC",
+        "image" => "./assets/images/mouse.jpg"
     ],
     [
-        "id"=> 6,
+        "id" => 6,
         "etudiant_id" => 5,
-        "nom"=> "itel A16",
-        "prix"=> 200,
-        "devise"=> "$",
+        "nom" => "Clavier sans fil",
+        "prix" => 15000,
+        "devise" => "FC",
+        "image" => "./assets/images/keyboard.jpg"
     ],
     [
-        "id"=> 7,
+        "id" => 7,
         "etudiant_id" => 5,
-        "nom"=> "Smartphone 16",
-        "prix"=> 125,
-        "devise"=> "$",
+        "nom" => "Airpods",
+        "prix" => 15,
+        "devise" => "$",
+        "image" => "./assets/images/airpods.jpg"
     ],
     [
-        "id"=> 8,
+        "id" => 8,
         "etudiant_id" => 4,
-        "nom"=> "Avocat",
-        "prix"=> 500,
-        "devise"=> "Fc",
+        "nom" => "Chargeur Iphone",
+        "prix" => 5,
+        "devise" => "$",
+        "image" => "./assets/images/iphone.png"
     ],
     [
-        "id"=> 9,
+        "id" => 9,
         "etudiant_id" => 1,
-        "nom"=> "yoyo",
-        "prix"=> 50,
-        "devise"=> "Fc",
+        "nom" => "Support téléphone",
+        "prix" => 5000,
+        "devise" => "Fc",
+        "image" => "./assets/images/support-tel.png"
     ],
     [
-        "id"=> 10,
+        "id" => 10,
         "etudiant_id" => 3,
-        "nom"=> "Bonbon",
-        "prix"=> 150,
-        "devise"=> "$",
+        "nom" => "Support PC",
+        "prix" => 16000,
+        "devise" => "FC",
+        "image" => "./assets/images/support-pc.png"
     ],
     [
-        "id"=> 11,
+        "id" => 11,
         "etudiant_id" => 3,
-        "nom"=> "Extra",
-        "prix"=> 500,
-        "devise"=> "FC",
+        "nom" => "Rallonge sans fil",
+        "prix" => 15,
+        "devise" => "$",
+        "image" => "./assets/images/iphone.png"
     ],
     [
-        "id"=> 12,
+        "id" => 12,
         "etudiant_id" => 4,
-        "nom"=> "Orange",
-        "prix"=> 100,
-        "devise"=> "FC",
+        "nom" => "RAM DDR4 16GB",
+        "prix" => 30,
+        "devise" => "$",
+        "image" => "./assets/images/ram.jpg"
     ],
     [
-        "id"=> 13,
+        "id" => 13,
         "etudiant_id" => 3,
-        "nom"=> "Phone 16",
-        "prix"=> 350,
-        "devise"=> "$",
+        "nom" => "Disque dur SSD 1To",
+        "prix" => 70,
+        "devise" => "$",
+        "image" => "./assets/images/ssd.jpg"
     ],
     [
-        "id"=> 14,
+        "id" => 14,
         "etudiant_id" => 2,
-        "nom"=> "Itel A10",
-        "prix"=> 100,
-        "devise"=> "$",
+        "nom" => "Modem 5G",
+        "prix" => 20,
+        "devise" => "$",
+        "image" => "./assets/images/modem.jpg"
     ],
     [
-        "id"=> 15,
+        "id" => 15,
         "etudiant_id" => 2,
-        "nom"=> "Iphone 10xr",
-        "prix"=> 250,
-        "devise"=> "$",
+        "nom" => "Lunette Bluetooth",
+        "prix" => 25,
+        "devise" => "$",
+        "image" => "./assets/images/glasses.png"
     ],
 ];
