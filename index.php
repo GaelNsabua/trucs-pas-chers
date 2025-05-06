@@ -48,7 +48,7 @@ require 'models/articles-data.php';
                     <li class="pb-3 sm:pb-4">
                         <div class="flex items-center space-x-4 rtl:space-x-reverse">
                             <div class="shrink-0">
-                                <img class="w-8 h-8 rounded-full object-cover object-center" src="./assets/images/book.png"
+                                <img class="w-8 h-8 rounded-full object-cover object-center" src="./uploads/images/logo.png"
                                     alt=<?php $name; ?>>
                             </div>
                             <div class="flex-1 min-w-0">
@@ -86,7 +86,7 @@ require 'models/articles-data.php';
                         <li class="pb-3 sm:pb-4">
                             <div class="flex items-center space-x-4 rtl:space-x-reverse">
                                 <div class="shrink-0">
-                                    <img class="w-8 h-8 rounded-full object-cover object-center" src="./assets/images/logo.png"
+                                    <img class="w-8 h-8 rounded-full object-cover object-center" src="./uploads/images/logo.png"
                                         alt=<?php $name; ?>>
                                 </div>
                                 <div class="flex-1 min-w-0">

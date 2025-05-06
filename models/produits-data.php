@@ -36,6 +36,7 @@ $etudiants = [
         "tel" => "0962348988",
 
     ],
+    
 ];
 
 $produits = [
@@ -45,7 +46,7 @@ $produits = [
         "nom" => "Smart Watch",
         "prix" => 20,
         "devise" => "$",
-        "image" => "./assets/images/smart-watch.jpg"
+        "image" => "watch.png"
     ],
 
     [
@@ -54,7 +55,7 @@ $produits = [
         "nom" => "Iphone 16e",
         "prix" => 500,
         "devise" => "$",
-        "image" => "./assets/images/iphone.png"
+        "image" => "iphone-red.png"
     ],
     [
         "id" => 3,
@@ -62,7 +63,7 @@ $produits = [
         "nom" => "Ecouteur sans fil",
         "prix" => 15,
         "devise" => "$",
-        "image" => "./assets/images/headphones.jpg"
+        "image" => "headphone.png"
     ],
     [
         "id" => 4,
@@ -70,7 +71,7 @@ $produits = [
         "nom" => "Sac pour PC",
         "prix" => 20,
         "devise" => "$",
-        "image" => "./assets/images/bag.png"
+        "image" => "laptop-bag.png"
     ],
     [
         "id" => 5,
@@ -78,7 +79,7 @@ $produits = [
         "nom" => "Souris sans fil",
         "prix" => 6000,
         "devise" => "FC",
-        "image" => "./assets/images/mouse.jpg"
+        "image" => "mouse-pc.png"
     ],
     [
         "id" => 6,
@@ -86,7 +87,7 @@ $produits = [
         "nom" => "Clavier sans fil",
         "prix" => 15000,
         "devise" => "FC",
-        "image" => "./assets/images/keyboard.jpg"
+        "image" => "keyboard-pc.png"
     ],
     [
         "id" => 7,
@@ -94,15 +95,15 @@ $produits = [
         "nom" => "Airpods",
         "prix" => 15,
         "devise" => "$",
-        "image" => "./assets/images/airpods.jpg"
+        "image" => "airpod.png"
     ],
     [
         "id" => 8,
         "etudiant_id" => 4,
-        "nom" => "Chargeur Iphone",
+        "nom" => "Chargeur PC",
         "prix" => 5,
         "devise" => "$",
-        "image" => "./assets/images/iphone.png"
+        "image" => "laptop-charger.png"
     ],
     [
         "id" => 9,
@@ -110,7 +111,7 @@ $produits = [
         "nom" => "Support téléphone",
         "prix" => 5000,
         "devise" => "Fc",
-        "image" => "./assets/images/support-tel.png"
+        "image" => "phone-holder.png"
     ],
     [
         "id" => 10,
@@ -118,15 +119,15 @@ $produits = [
         "nom" => "Support PC",
         "prix" => 16000,
         "devise" => "FC",
-        "image" => "./assets/images/support-pc.png"
+        "image" => "support-pc.png"
     ],
     [
         "id" => 11,
         "etudiant_id" => 3,
-        "nom" => "Rallonge sans fil",
+        "nom" => "Agenda",
         "prix" => 15,
         "devise" => "$",
-        "image" => "./assets/images/iphone.png"
+        "image" => "agenda.png"
     ],
     [
         "id" => 12,
@@ -134,7 +135,7 @@ $produits = [
         "nom" => "RAM DDR4 16GB",
         "prix" => 30,
         "devise" => "$",
-        "image" => "./assets/images/ram.jpg"
+        "image" => "ram-pc.png"
     ],
     [
         "id" => 13,
@@ -142,7 +143,7 @@ $produits = [
         "nom" => "Disque dur SSD 1To",
         "prix" => 70,
         "devise" => "$",
-        "image" => "./assets/images/ssd.jpg"
+        "image" => "ssd.jpg"
     ],
     [
         "id" => 14,
@@ -150,7 +151,7 @@ $produits = [
         "nom" => "Modem 5G",
         "prix" => 20,
         "devise" => "$",
-        "image" => "./assets/images/modem.jpg"
+        "image" => "modem-info.png"
     ],
     [
         "id" => 15,
@@ -158,6 +159,6 @@ $produits = [
         "nom" => "Lunette Bluetooth",
         "prix" => 25,
         "devise" => "$",
-        "image" => "./assets/images/glasses.png"
+        "image" => "glass.png"
     ],
 ];

@@ -22,6 +22,12 @@ $default = $same . " text-gray-300 hover:bg-gray-700 hover:text-white";
             <a href="produits.php" class="<?php echo $title === "Produits" ? $current : $default; ?>">
               Produit
             </a>
+            <a href="filtre.php" class="<?php echo $title === "Filtre" ? $current : $default; ?>">
+              Filtre
+            </a>
+            <a href="create.php" class="<?php echo $title === "Nouveau produit" ? $current : $default; ?>">
+              Nouveau produit
+            </a>
             <a href="about.php" class="<?php echo $title === "A propos" ? $current : $default; ?>">
               About
             </a>
