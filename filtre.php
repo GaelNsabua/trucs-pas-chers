@@ -1,19 +1,34 @@
 <?php
 
-require 'models/produits-data.php';
-
 $title = "Filtre";
 
 $etudiant_id = $_GET["etudiant"] ?? 1;
 
-foreach ($etudiants as $etudiant) {
-    if ($etudiant["id"] == $etudiant_id) {
-        $nom_etudiant = $etudiant["nom"];
-        break;
-    }
-}
+//Connection à la base de données
+require "utils/DBConnection.php";
 
-$header = isset($nom_etudiant) ?  "Filtre des produits : $nom_etudiant " : "Aucun étudiant trouvé ";
+//Recuperation du modele Etudiant
+require "models/EtudiantModel.php";
+
+//Recuperation du modele Produit
+require "models/ProduitModel.php";
+
+$etudiantModel = new EtudiantModel();
+
+$etudiants = $etudiantModel->getAll();
+
+//Recuperation du nom de l'étudiant correspondant à l'id recuperée dans l'URL
+$etudiant = $etudiantModel->getById($etudiant_id);
+
+$nom_etudiant = $etudiant["nom"] ?? "";
+
+//Recuperation des produits filtrées dans la base de données
+$produitModel = new ProduitModel();
+
+//Recuperer les produits filtrés
+$produits = $produitModel->filterByEtudiantId($etudiant_id);
+
+$header = isset($nom_etudiant) && $nom_etudiant != "" ?  "Filtre des produits : $nom_etudiant " : "Aucun étudiant trouvé ";
 
 ?>
 <?php require 'composants/head.php'; ?>
@@ -46,9 +61,9 @@ $header = isset($nom_etudiant) ?  "Filtre des produits : $nom_etudiant " : "Aucu
 
 <?php if (isset($nom_etudiant)) : ?>
 
-<div class="grid grid-cols-3 gap-4">
-    <?php foreach ($produits as $produit): ?>
-        <?php if ($produit["etudiant_id"] == $etudiant_id): ?>
+    <div class="grid grid-cols-3 gap-4">
+        <?php foreach ($produits as $produit): ?>
+
             <div
                 class="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
@@ -102,9 +117,9 @@ $header = isset($nom_etudiant) ?  "Filtre des produits : $nom_etudiant " : "Aucu
                     </div>
                 </div>
             </div>
-        <?php endif; ?>
-    <?php endforeach; ?>
-</div>
+
+        <?php endforeach; ?>
+    </div>
 <?php endif; ?>
 
 <?php require 'composants/footer.php'; ?>
