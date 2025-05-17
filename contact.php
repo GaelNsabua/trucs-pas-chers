@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $title = "Contact";
 $header = "Contactez-nous"
 ?>

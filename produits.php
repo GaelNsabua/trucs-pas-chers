@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Produits";
 $header = "Decouvrez tout nos produits";
 ?>

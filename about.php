@@ -1,4 +1,5 @@
 <?php 
+session_start();
 $title = "A propos";
 $header = "A propos de nous";
 ?>

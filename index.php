@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title = "Acceuil";
 $header = "Bienvenu sur TrucsPasChers";
 ?>

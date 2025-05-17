@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $title = "Filtre";
 
 $etudiant_id = $_GET["etudiant"] ?? 1;
